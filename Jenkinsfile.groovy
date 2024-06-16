@@ -17,6 +17,7 @@ pipeline {
         stage('Code Scanner') {
             steps{
                 echo 'Escaneando o codigo'
+
                 withSonarQubeEnv('sonarqube_server'){
                     sh './gradlew clean build sonarqube'
                 }
