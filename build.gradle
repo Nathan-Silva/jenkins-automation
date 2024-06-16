@@ -41,6 +41,6 @@ compileTestJava {
 sonar {
     properties {
         property "sonar.host.url", "http://localhost:9000"
-        property "sonar.token", "sqa_65fec26ff26cea154a0e97973c59bfd954aa09a4"
+        property "sonar.token", "sqa_a401a016e149af7cb15ad674d31d4eef483cd202"
     }
 }
