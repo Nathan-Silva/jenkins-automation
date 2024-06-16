@@ -9,15 +9,21 @@ pipeline {
         }
 
         stage('Tests') {
-            echo 'Realizando os testes'
+            steps{
+                echo 'Realizando os testes'
+            }
         }
 
         stage('Code Scanner') {
-            echo 'Escaneando o codigo'
+            steps{
+                echo 'Escaneando o codigo'
+            }
         }
 
         stage('Deploy Kubernetes') {
-            echo 'Realizando o Deploy em prod K8s'
+            steps{
+                echo 'Realizando o Deploy em prod K8s'
+            }
         }
     }
 }
