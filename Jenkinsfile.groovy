@@ -19,7 +19,7 @@ pipeline {
                 echo 'Escaneando o codigo'
 
                 withSonarQubeEnv('sonarqube_server'){
-                    sh './gradlew clean build sonarqube'
+                    sh './gradlew clean build sonar'
                 }
             }
         }
