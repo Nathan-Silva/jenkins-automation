@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'io.quarkus'
+    id "org.sonarqube" version "4.0.0.2929"
 }
 
 repositories {
@@ -35,4 +36,12 @@ compileJava {
 
 compileTestJava {
     options.encoding = 'UTF-8'
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "myProjectKey"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.login", "sqa_65fec26ff26cea154a0e97973c59bfd954aa09a4"
+    }
 }
