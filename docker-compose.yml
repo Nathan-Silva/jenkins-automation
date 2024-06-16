@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  api01: &api
+    image: braganathan38/jenkins-automation:1.0
+    hostname: api01
+    networks:
+      - default
+    ports:
+      - "8082:8082"
+
+networks:
+  default:
+    driver: bridge
